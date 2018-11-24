@@ -18,6 +18,7 @@ public class Main {
 		watchDB.add(seik);
 		
 		checkDB(watchDB);
+		validateWatch(1662836);
 			
 		
 	}
@@ -25,6 +26,14 @@ public class Main {
 	public static void checkDB(ArrayList<Watch> wbd){
 		for (Watch w:wbd){
 			System.out.println(w.idNumber);
+		}
+	}
+	
+	public static void validateWatch(int watchId){
+		for(Watch w:watchDB){
+			if(w.idNumber == watchId){
+				System.out.println("Watch with id " + watchId + " is a valid wtch");
+				}
 		}
 	}
 	
